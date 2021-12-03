@@ -1,0 +1,41 @@
+# FILE TYPE: DIY Calculator List (*.lst) file
+# GENERATED: DIY Calculator Assembler V2.0
+# DATE-TIME: Mar 10 14:35:06 2016
+# SOURCEWAS: C:\DIY Calculator\Work\2nd.asm
+
+INSTBYTES: 13
+DATABYTES: 1
+
+LINE  ADDR   DATA      LABEL   OPCODE OPERAND
+----- ---- --------  --------- ------ -------
+00001                LCD:      .EQU   $F031
+00002                CLR:      .EQU   $10
+00003                RAM:      .EQU   $4000
+00004                ROM:      .EQU   $0000
+00005                          .ORG   $4000
+00006 4000 91 40 0D            LDA    [X]
+00007 4003 80                  INCA   
+00008 4004 99 40 0D            STA    [X]
+00009 4007 99 F0 31            STA    [$F031]
+00010 400A C1 00 00            JMP    [$0000]
+00011 400D 05        X:        .BYTE  $05	
+00012                          .END
+
+
+
+CONSTANT LABELS CROSS-REFERENCE
+
+  NAME     VALUE   LINE NUMBERS WHERE USED (* INDICATES DECLARATION)
+-------- --------- ---------------------------------------------------
+CLR      00000010  00002* 
+LCD      0000F031  00001* 
+RAM      00004000  00003* 00005  
+ROM      00000000  00004* 
+
+
+
+ADDRESS LABELS CROSS-REFERENCE
+
+  NAME     VALUE   LINE NUMBERS WHERE USED (* INDICATES DECLARATION)
+-------- --------- ---------------------------------------------------
+X        ....400D  00006  00008  00011* 

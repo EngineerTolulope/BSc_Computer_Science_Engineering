@@ -1,0 +1,10 @@
+# FILE TYPE: DIY Calculator List (*.ram) file
+# GENERATED: DIY Calculator Assembler V2.0
+# DATE-TIME: May 12 13:05:04 2016
+# SOURCEWAS: C:\Users\Tboy Simple\Desktop\Education\2nd year\2nd semester\Hardware Programming\DIY Calculator\Work\practice.asm
+
+STARTADDR: $4000
+FINALADDR: $401A
+
+$4000 50 EF FF 90 01 99 F0 20 C9 40 0E C1 40 03 70 60
+$4010 00 D1 40 1A 99 F0 20 C1 40 0E CF -- -- -- -- --

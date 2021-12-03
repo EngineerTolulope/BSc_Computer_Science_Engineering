@@ -1,0 +1,41 @@
+/*** Example of bit operations ***/
+#include<stdio.h>
+
+
+int minus1(int n){//takes a number and multiplies it by -1; 5 becomes -5
+  return increment(~n);//we put the inverse of the bits n in the increment function, this function then increments n by 1
+  //which is the 2nd complement of the original n, therefore the negative n
+
+}
+int increment(int n){
+    int mask=1;
+
+    int m;
+    while(1){
+        m=n&mask;
+        if (m!=0){
+            n=n&(~mask);
+        }else{
+            n=n|mask;
+            break;
+
+        }
+        mask<<=1;
+
+    }
+
+return n;
+
+}
+int main(){
+  int n,m;
+  printf("Give me a number...");
+  scanf("%d",&n);
+
+  printf("%d",increment(n));
+  printf("\n%d",minus1(n));
+
+
+  return 0;
+  }
+

@@ -1,0 +1,42 @@
+In device
+
+lobal Const VRAM_Text_Default_start = &HEE00&
+Global Const VRAM_Text_Default_end = &HEFFF&
+Global Const VRAM_Text_Alt_start = &HEC00&
+Global Const VRAM_Text_Alt_end = &HEDFF&
+
+Global Const VRAM_graphic_default_start = &HE400&
+Global Const VRAM_graphic_default_end = &HEFFF&
+Global Const VRAM_graphic_Alt_start = &HD800&
+Global Const VRAM_graphic_Alt_end = &HE3FF&
+
+Global Const VRAM_max_rows = 16
+Global Const VRAM_max_cols = 32
+
+Global Const VRAM_maxg_rows = 48
+Global Const VRAM_maxg_cols = 64
+
+stetemc initilize
+
+For I = (ROM_End + 1) To (VRAM_graphic_Alt_start - 1)
+        memory_map(3, I) = &H100
+    Next I
+    
+    For I = VRAM_graphic_Alt_start To VRAM_Text_Default_end
+        memory_map(3, I) = Int((254 - 1) + 1) * Rnd + 1
+    Next I
+
+CTRLKEy
+CTRL_KEY = Not CTRL_KEY
+        If CTRL_KEY = -1 Then Keyboard.Command54.ForeColor = &HFF&
+        If CTRL_KEY = 0 Then Keyboard.Command54.ForeColor = &H0&
+
+Shift
+SHIFT_KEY = Not SHIFT_KEY
+        If SHIFT_KEY = -1 Then Keyboard.Command53.ForeColor = &HFF&
+        If SHIFT_KEY = 0 Then Keyboard.Command53.ForeColor = &H0&
+
+Cap
+CAPS_KEY = Not CAPS_KEY
+        If CAPS_KEY = -1 Then Keyboard.Command52.ForeColor = &HFF&
+        If CAPS_KEY = 0 Then Keyboard.Command52.ForeColor = &H0&

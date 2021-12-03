@@ -1,0 +1,118 @@
+[ Friday, March 25, 2016 7:18 PM ] Tboy Simple ??: no. 1
+[ Friday, March 25, 2016 7:18 PM ] Tboy Simple ??: int main()
+{
+    int tobi;
+    printf("give me a number...");
+    scanf("%d", &tobi);
+    switch (tobi){
+    case 1: printf("Monday"); break;
+    case 2: printf("Tuesday");break;
+    case 3: printf("Wednesday"); break;
+    case 4: printf("Thursday"); break;
+    case 5: printf("Friday"); break;
+    case 6: printf("Saaturady"); break;
+    case 7: printf("Sun"); break;
+    default : printf("No round like that");
+    }
+    return 0;
+}
+[ Friday, March 25, 2016 8:11 PM ] Tboy Simple ??: no. 2
+[ Friday, March 25, 2016 8:11 PM ] Tboy Simple ??: int strongtobi(int gift){
+if (gift<0) return 0;
+else return 1;
+}
+int main()
+{
+    int tobi,pus=0;
+    do{
+    printf("Give me a fucking no.");
+    scanf("%d",&tobi);
+    if (tobi==0) {
+        printf("Number of Pussy %d",pus);
+        break;
+    }
+    if (strongtobi(tobi)){
+        pus++;
+    }
+
+    }while (1<5);
+    return 0;
+}
+[ Friday, March 25, 2016 8:31 PM ] Tboy Simple ??: no.3
+[ Friday, March 25, 2016 8:31 PM ] Tboy Simple ??: int main()
+{
+    int tobi[30];
+    int i,sumodd=0,sumeven=0;
+    for(i=0;i<30;i++){
+        printf("The %d. number is: ",i+1);
+        scanf("%d",&tobi[i]);
+    }
+    for(i=0;i<30;i++){
+        if (tobi[i]%2==0)
+            sumeven+=tobi[i];
+        else
+            sumodd+=tobi[i];
+    }
+    printf("Even Sum: %d\nOdd Sum: %d",sumeven,sumodd);
+
+    return 0;
+}
+
+[ Friday, March 25, 2016 8:39 PM ] Tboy Simple ??: no. 4
+[ Friday, March 25, 2016 8:39 PM ] Tboy Simple ??: int main()
+{
+    int tobi[20];
+    int i;
+    for(i=0;i<20;i++){
+        printf("The %d. number is: ",i+1);
+        scanf("%d",&tobi[i]);
+    }
+    printf("Less than 20: ");
+    for (i=19;i>=0;i--){
+        if (tobi[i] < 20){
+            printf("%d ",tobi[i]);
+        }
+    }
+
+    return 0;
+}
+[ Friday, March 25, 2016 9:14 PM ] Tboy Simple ??: no. 5
+[ Friday, March 25, 2016 9:14 PM ] Tboy Simple ??: #include <stdio.h>
+#include <stdlib.h>
+
+
+
+    int main()
+{
+    int i;
+    char simple[50],tobi[50];
+    int simplelast, tobilast;
+    printf("Give me Simple string...");
+    scanf("%s",simple);
+    printf("Give me Tobi string...");
+    scanf("%s",tobi);
+    for (i=0;i<50;i++){
+        if (simple[i]=='\0'){
+            simplelast=i;
+            break;
+        }
+    }
+    for (i=0;i<50;i++){
+        if (tobi[i]=='\0'){
+            tobilast=i;
+            break;
+        }
+    }
+    for (i=0;i<simplelast;i++){
+        if (simple[i]!='e')
+            printf("%c",simple[i]);
+        else
+            printf("3");
+    }
+    printf("\n");
+    for (i=tobilast-1;i>=0;i--){
+        printf("%c",tobi[i]);
+    }
+
+    return 0;
+}

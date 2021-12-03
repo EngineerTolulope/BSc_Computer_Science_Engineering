@@ -1,0 +1,9 @@
+# FILE TYPE: DIY Calculator List (*.ram) file
+# GENERATED: DIY Calculator Assembler V2.0
+# DATE-TIME: May 10 12:57:04 2018
+# SOURCEWAS: C:\Users\Eng. Simple\Desktop\food2.asm
+
+STARTADDR: $4000
+FINALADDR: $4009
+
+$4000 50 EF FF 90 10 80 B2 C1 40 00 -- -- -- -- -- --

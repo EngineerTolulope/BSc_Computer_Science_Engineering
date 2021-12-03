@@ -1,0 +1,6 @@
+Fourth task: 
+Write C program that creates a brand new bmp image file according to these:  
+-resolution 200x200 
+-color depth: 24 bit
+-it contains 4 100x100 quartes of different colors (red, green, blue, yellow). The image will be similar to the 2x2 example in the attached image, just greater.
+-so there is no source image, every field is created by your program.

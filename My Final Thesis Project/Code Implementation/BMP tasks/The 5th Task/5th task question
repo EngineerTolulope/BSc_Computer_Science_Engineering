@@ -1,0 +1,5 @@
+Fifth task:
+Write a C program that creates a brand new bmp image file according to these: 
+-resolution 256x256 
+-color depth: 24 bit
+-each line represents 1 shade of red (from pure red to black). So the top of the image is (light) red and then there are darker and darker red shade as moving downward, and finally the last row is black.

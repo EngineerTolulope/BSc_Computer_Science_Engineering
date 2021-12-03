@@ -1,0 +1,31 @@
+# FILE TYPE: DIY Calculator List (*.lst) file
+# GENERATED: DIY Calculator Assembler V2.0
+# DATE-TIME: May 10 12:57:04 2018
+# SOURCEWAS: C:\Users\Eng. Simple\Desktop\food2.asm
+
+INSTBYTES: 10
+DATABYTES: 0
+
+LINE  ADDR   DATA      LABEL   OPCODE OPERAND
+----- ---- --------  --------- ------ -------
+00001                          .ORG   $4000
+00002 4000 50 EF FF            BLDSP  $EFFF
+00003 4003 90 10               LDA    $10
+00004 4005 80                  INCA   
+00005 4006 B2                  PUSHA  
+00006 4007 C1 40 00            JMP    [$4000]
+00007                          .END
+
+
+
+CONSTANT LABELS CROSS-REFERENCE
+
+  NAME     VALUE   LINE NUMBERS WHERE USED (* INDICATES DECLARATION)
+-------- --------- ---------------------------------------------------
+
+
+
+ADDRESS LABELS CROSS-REFERENCE
+
+  NAME     VALUE   LINE NUMBERS WHERE USED (* INDICATES DECLARATION)
+-------- --------- ---------------------------------------------------

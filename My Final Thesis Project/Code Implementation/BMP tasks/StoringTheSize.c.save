@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include<sys/stat.h>
+#include<fcntl.h>
+
+int main(){
+int temp;
+int W,H;
+read(f,&temp,4); // unused filed
+read(f,&temp,4); // Pixel Array offset
+read(f,&temp,4); // DIB header size
+read(f,&W,4); // width in pixel (as binary integer) 
+read(f,&H,4); // height in pixel (as binary integer)
+printf(“The resolution is %d x %d. \n”,W, H );
+return 0;
+}

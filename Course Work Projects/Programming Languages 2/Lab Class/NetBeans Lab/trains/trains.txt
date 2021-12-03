@@ -1,0 +1,7 @@
+Debrecen@Budapest@13:10@IC
+Debrecen@Budapest@14:10@IC
+Budapest@Eger@13:30
+Debrecen@Miskolc@11:30
+Miskolc@Egerbakta@12:23
+Eger@Budapest@10:42
+Debrecen@Eger@15:30

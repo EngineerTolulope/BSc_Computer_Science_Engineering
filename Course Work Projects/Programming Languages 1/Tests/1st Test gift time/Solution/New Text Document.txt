@@ -1,0 +1,139 @@
+[ Friday, April 1, 2016 10:23 AM ] Tboy Simple ??: no. 1
+[ Friday, April 1, 2016 10:23 AM ] Tboy Simple ??: int main()
+{
+    int num;
+    printf("Give me a no.");
+    scanf("%d",&num);
+    if (num>0)
+        printf("1");
+    else if(num==0)
+        printf("0");
+    else
+        printf("-1");
+    return 0;
+}
+[ Friday, April 1, 2016 10:39 AM ] Tboy Simple ??: no. 2
+[ Friday, April 1, 2016 10:39 AM ] Tboy Simple ??: not sure thou
+[ Friday, April 1, 2016 10:39 AM ] Tboy Simple ??: 
+ int isupper(char c){
+  if ((c>=65) &&(c<=90))
+    return 1;
+  else
+    return 0;
+
+
+}
+int main()
+{
+    int lower=0,upper=0;
+    char c;
+    printf("Give me a char....");
+        scanf("%c",&c);
+
+    while(c!='!'){
+
+
+
+        if (isupper(c))
+            upper++;
+
+        else
+            lower++;
+        printf("Give me a char....");
+        scanf("%c",&c);
+    }
+
+
+
+    printf("No. of uppercase: %d\nNo. of lowercase:%d",upper,lower);
+    return 0;
+}
+[ Friday, April 1, 2016 10:44 AM ] Tboy Simple ??: no. 3
+[ Friday, April 1, 2016 10:44 AM ] Tboy Simple ??: int main()
+{
+    int num[10];
+    int i;
+    for(i=0;i<10;i++){
+        printf("The. %d. number is: ",i+1);
+        scanf("%d",&num[i]);
+
+    }
+    for (i=0;i<10;i++){
+        if (num[i]%3==0)
+            printf("%d ",num[i]);
+    }
+    return 0;
+}
+[ Friday, April 1, 2016 11:00 AM ] Tboy Simple ??: no. 4
+[ Friday, April 1, 2016 11:00 AM ] Tboy Simple ??: void length(char first[50],char second[50]){
+int i, lfirst, lsecond;
+for (i=0;i<50;i++){
+    if (first[i]=='\0'){
+        lfirst=i;
+        break;
+    }
+}
+for (i=0;i<50;i++){
+    if (second[i]=='\0'){
+        lsecond=i;
+        break;
+    }
+}
+printf("The longer string is....");
+if (lfirst>lsecond){
+    for (i=0;i<lfirst;i++){
+        if(first[i] > 97){
+            printf("%c",first[i]-32);
+        }
+        else
+            printf("%c",first[i]);
+    }
+
+}
+else {
+
+    for (i=0;i<lsecond;i++){
+        if(second[i] > 97){
+            printf("%c",second[i]-32);
+        }
+        else
+            printf("%c",second[i]);
+    }
+
+}
+
+
+return;
+}
+int main()
+{
+    char first[50],second[50];
+    int i, lfirst, lsecond;
+    printf("Give me the first string...");
+    scanf("%s",first);
+    printf("Give me the second string...");
+    scanf("%s",second);
+
+    length(first,second);
+
+    return 0;
+}
+[ Friday, April 1, 2016 11:07 AM ] Tboy Simple ??: no. 5
+[ Friday, April 1, 2016 11:07 AM ] Tboy Simple ??: int main()
+{
+    char first[100];
+    int num,i,j;
+    printf("Give the number of times you want it printed...");
+    scanf("%d",&num);
+    printf("Give me a string...");
+    scanf("%s",first);
+    for (i=0;i<num;i++){
+        for(j=0;first[j]!='\0';j++){
+            printf("%c",first[j]);
+        }
+     printf("\n");
+    }
+
+
+    return 0;
+}

@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int sum=0,num;
+    FILE *f;
+    f=fopen("in.txt","r+");
+    while (1){
+        fscanf(f,"%d",&num);
+        if (feof(f)) break;//if we do
+        printf("%d ",num);
+        sum+=num;
+
+    }
+    fprintf(stdout,"%d",sum);
+    fclose(f);
+    return 0;
+}

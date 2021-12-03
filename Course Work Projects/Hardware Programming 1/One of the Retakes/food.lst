@@ -1,0 +1,52 @@
+# FILE TYPE: DIY Calculator List (*.lst) file
+# GENERATED: DIY Calculator Assembler V2.0
+# DATE-TIME: May 10 12:55:37 2018
+# SOURCEWAS: C:\Users\Eng. Simple\Desktop\food.asm
+
+INSTBYTES: 43
+DATABYTES: 2
+
+LINE  ADDR   DATA      LABEL   OPCODE OPERAND
+----- ---- --------  --------- ------ -------
+00001                          .ORG   $4000
+00002 4000 50 EF FF            BLDSP  $EFFF
+00003 4003 91 F0 00  STAR:     LDA    [$F000]
+00004 4006 99 40 2B            STA    [A]
+00005 4009 C9 40 15            JSR    [DIFF]
+00006 400C 91 40 2C            LDA    [B]
+00007 400F 99 F0 20            STA    [$F020]
+00008 4012 C1 40 03            JMP    [STAR]
+00009
+00010 4015 91 40 2B  DIFF:     LDA    [A]
+00011 4018 60 00               CMPA   $00
+00012 401A D1 40 25            JZ     [ZEE]
+00013 401D 90 FF               LDA    $FF
+00014 401F 99 40 2C            STA    [B]
+00015 4022 C1 40 2A            JMP    [NEXT]
+00016 4025 90 01     ZEE:      LDA    $01
+00017 4027 99 40 2C            STA    [B]
+00018 402A CF        NEXT:     RTS    
+00019
+00020 402B 00        A:        .BYTE  
+00021 402C 00        B:        .BYTE  
+00022                          .END
+
+
+
+CONSTANT LABELS CROSS-REFERENCE
+
+  NAME     VALUE   LINE NUMBERS WHERE USED (* INDICATES DECLARATION)
+-------- --------- ---------------------------------------------------
+
+
+
+ADDRESS LABELS CROSS-REFERENCE
+
+  NAME     VALUE   LINE NUMBERS WHERE USED (* INDICATES DECLARATION)
+-------- --------- ---------------------------------------------------
+A        ....402B  00004  00010  00020* 
+B        ....402C  00006  00014  00017  00021* 
+DIFF     ....4015  00005  00010* 
+NEXT     ....402A  00015  00018* 
+STAR     ....4003  00003* 00008  
+ZEE      ....4025  00012  00016* 

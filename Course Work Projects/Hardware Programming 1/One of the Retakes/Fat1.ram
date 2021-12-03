@@ -1,0 +1,11 @@
+# FILE TYPE: DIY Calculator List (*.ram) file
+# GENERATED: DIY Calculator Assembler V2.0
+# DATE-TIME: May 08 21:16:50 2018
+# SOURCEWAS: C:\Users\Eng. Simple\Desktop\Fat1.asm
+
+STARTADDR: $4000
+FINALADDR: $4024
+
+$4000 91 40 22 60 05 D1 40 10 90 05 99 40 23 C1 40 15
+$4010 90 00 99 40 23 91 40 23 80 99 40 24 99 F0 31 C1
+$4020 00 00 03 00 00 -- -- -- -- -- -- -- -- -- -- --

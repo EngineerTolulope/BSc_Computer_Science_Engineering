@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1478692952 source:c:\users\tboy simple\onedrive\education\3rd year\1st semester\hardware programming 2\codeblocks codes\5th\dir\main.c
+	<stdio.h>
+	<stdlib.h>
+	<dirent.h>
+

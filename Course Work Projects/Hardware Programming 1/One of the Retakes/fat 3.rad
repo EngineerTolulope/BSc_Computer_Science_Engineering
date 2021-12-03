@@ -1,0 +1,24 @@
+# FILE TYPE: DIY Calculator Raw Assembly Dump (*.rad) file
+# GENERATED: DIY Calculator Assembler V2.0
+# DATE-TIME: May 08 22:28:35 2018
+# SOURCEWAS: C:\Users\Eng. Simple\Desktop\fat 3.asm
+
+STARTLINE: 00001
+FINALLINE: 00016
+
+00001 P ----- ---
+00002 I $4000 $91
+00003 J $4003 $D9
+00004 J $4006 $D1
+00005 I $4009 $60
+00006 J $400B $E1
+00007 I $400E $91
+00008 I $4011 $80
+00009 I $4012 $99
+00010 I $4015 $C1
+00011 I $4018 $91
+00012 I $401B $99
+00013 I $401E $C1
+00014 B ----- ---
+00015 D $4021 $00
+00016 P ----- ---

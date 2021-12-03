@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1432385867 source:c:\users\t boy\desktop\c programming projects\read a string to a file only if it starts with a\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

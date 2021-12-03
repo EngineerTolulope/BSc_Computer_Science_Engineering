@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<dirent.h>
+/*Program goes to a directory and randomly picks a file name in the directory */
+int main(){
+   int r, nf=0;
+   DIR* d;
+   struct dirent *entry;
+   srand(time(NULL));
+   d=opendir("C:\\Windows");
+   do{
+     entry=readdir(d);
+     if(entry==NULL) break;
+     nf++; // it gets the number of files in the directory by incrementing this after reading
+//     printf("%s\n",(*entry).d_name);
+     }
+   while(1);
+   closedir(d); // we close and open the directory, so we can reset the readdir(d)
+                //to start reading from the beginning again
+
+   r=rand()%nf; //takes a random number from 0 t0 nf
+
+   nf=0;//resets nf to 0, so we start checking still r
+   d=opendir("C:\\Windows");
+   do{
+     entry=readdir(d);//read a file from directory
+     if(entry==NULL) break;//if the directory is empty break
+     if(nf==r) {//trying to only enter the loop when we read, the random number r
+            printf("%s\n",(*entry).d_name);//we print the directory at the random number r
+            break; // we are done, so we break
+     }
+     nf++;// increments the value until we reach r
+     }
+   while(1);
+   closedir(d);
+
+   return 0;
+   }

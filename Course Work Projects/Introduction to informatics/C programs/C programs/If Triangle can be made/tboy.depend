@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1416392020 source:c:\users\t boy\desktop\c programming projects\tboy\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1416580656 source:c:\users\t boy\desktop\c programming projects\state if the triangle can be constructed and finding area\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

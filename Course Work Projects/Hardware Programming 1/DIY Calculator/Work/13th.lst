@@ -1,0 +1,35 @@
+# FILE TYPE: DIY Calculator List (*.lst) file
+# GENERATED: DIY Calculator Assembler V2.0
+# DATE-TIME: Apr 14 14:38:50 2016
+# SOURCEWAS: C:\Users\Tboy Simple\Desktop\Education\2nd year\2nd semester\Hardware Programming\DIY Calculator\Work\13th.asm
+
+INSTBYTES: 23
+DATABYTES: 0
+
+LINE  ADDR   DATA      LABEL   OPCODE OPERAND
+----- ---- --------  --------- ------ -------
+00001                          .ORG   $4000
+00002 4000 91 F0 11  READ:     LDA    [$F011]
+00003 4003 D9 40 00            JN     [READ]
+00004 4006 60 0F               CMPA   $0F
+00005 4008 E1 40 00            JC     [READ]
+00006 400B 99 F0 21            STA    [$F021]
+00007 400E 99 F0 22            STA    [$F022]
+00008 4011 99 F0 23            STA    [$F023]
+00009 4014 C1 40 00            JMP    [READ]
+00010                          .END
+
+
+
+CONSTANT LABELS CROSS-REFERENCE
+
+  NAME     VALUE   LINE NUMBERS WHERE USED (* INDICATES DECLARATION)
+-------- --------- ---------------------------------------------------
+
+
+
+ADDRESS LABELS CROSS-REFERENCE
+
+  NAME     VALUE   LINE NUMBERS WHERE USED (* INDICATES DECLARATION)
+-------- --------- ---------------------------------------------------
+READ     ....4000  00002* 00003  00005  00009  
