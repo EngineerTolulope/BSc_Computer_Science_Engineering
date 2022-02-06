@@ -1,5 +1,5 @@
 # Bachelor of Science in Computer Science Engineering
-The repository contains some of the course work and projects I completed during my bachelor's degree program in Hungary, which ended in January 2018.
+This repository contains some of the course work and projects I completed during my bachelor's degree program in Hungary, which ended in January 2018.
 I had the opportunity to work with a variety of programming languages, including C/C++, Java, Python, and MATLAB. 
 
 ## Summary of the Thesis Documentation
